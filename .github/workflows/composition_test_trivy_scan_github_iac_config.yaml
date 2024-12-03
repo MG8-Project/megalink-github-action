@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-22.04
     
     steps:
-      - uses: imantisco/mantisco-github-action/composition/test_trivy_scan_github_iac_config@dev
+      - uses: MG8-Project/megalink-github-action/composition/test_trivy_scan_github_iac_config@dev
         id: test_trivy_scan_github_iac_conf
         with:
           # format: "template"

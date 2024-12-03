@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-22.04
     
     steps:
-      - uses: imantisco/mantisco-github-action/composition/test_trivy_fs@dev
+      - uses: MG8-Project/megalink-github-action/composition/test_trivy_fs@dev
