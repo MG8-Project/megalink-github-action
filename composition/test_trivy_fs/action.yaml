@@ -1,0 +1,21 @@
+name: Composition / Test Trivy FS(FileSystem)
+
+runs:
+  using: composite
+  steps:
+    - name: "[1/3] Git 체크아웃"
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+
+    - name: "[2/3] Trivy 설치 및 캐시"
+      uses: aquasecurity/setup-trivy@v0.2.0
+      with:
+        cache: true
+        version: v0.57.1
+
+    - name: "[3/3] Trivy 실행하기"
+      shell: bash
+      run: |
+        trivy fs .
+
