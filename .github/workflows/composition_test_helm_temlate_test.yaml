@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-22.04
     
     steps:
-      - uses: imantisco/mantisco-github-action/composition/test_helm_template@dev
+      - uses: MG8-Project/megalink-github-action/composition/test_helm_template@dev
         with:
           base_directory: ./composition/test_helm_template

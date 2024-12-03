@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
     
     steps:
-      - uses: imantisco/mantisco-github-action/composition/pull_request_generator@dev
+      - uses: MG8-Project/megalink-github-action/composition/pull_request_generator@dev
         with:
           dest_branch: main
         env:
